@@ -186,3 +186,24 @@ def main():
 
 if __name__ == "__main__":
     main()
+    """
+1. En datetime.datetime.now(), datetime es la biblioteca,
+datetime es la clase y now() es el método utilizado para
+obtener la fecha y hora actual del sistema.
+
+2.Con import math debemos escribir math.sqrt().
+Con from math import sqrt solo usamos sqrt().
+La diferencia está en cómo se invocan las funciones.
+
+3. Primero se generan los datos aleatorios de entrenamiento,
+después se almacenan en listas y finalmente se utilizan
+para calcular estadísticas y el RMSE.
+
+4. Se utilizaron listas para almacenar los valores de loss
+y latencias porque permiten guardar múltiples datos
+relacionados y recorrerlos fácilmente con ciclos.
+
+5.No fue necesario programar manualmente la fórmula de la
+desviación estándar porque la biblioteca statistics ya
+incluye esa funcionalidad.
+"""
