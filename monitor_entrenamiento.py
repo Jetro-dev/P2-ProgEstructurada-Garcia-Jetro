@@ -161,3 +161,28 @@ def calcular_rmse(predicciones, reales):
 
     print("RMSE:", round(rmse, 4))
     print("Epochs redondeados:", epochs_redondeados)
+
+# ==========================================
+# 4. PROGRAMA PRINCIPAL (PUNTO DE ENTRADA)
+# ==========================================
+
+def main():
+
+    print("=== INICIANDO SIMULADOR DE AGENTES DE IA ===")
+
+    obtener_info_sistema()
+
+    lista_loss, lista_latencias = simular_metricas_entrenamiento(MAX_EPOCHS)
+
+    analizar_rendimiento(lista_loss, lista_latencias)
+
+    predicciones = [0.8, 0.6, 0.7, 0.9]
+    reales = [1.0, 0.5, 0.8, 1.0]
+
+    calcular_rmse(predicciones, reales)
+
+    print("\n=== ENTRENAMIENTO FINALIZADO ===")
+
+
+if __name__ == "__main__":
+    main()
